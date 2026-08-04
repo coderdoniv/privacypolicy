@@ -14,8 +14,13 @@
         }
 
         h1,
-        h2 {
+        h2,
+        h3 {
             color: #333;
+        }
+
+        a {
+            color: #0066cc;
         }
     </style>
 </head>
@@ -23,60 +28,68 @@
 <body>
 
     <h1>Privacy Policy for Sylens</h1>
-    <p><strong>Effective Date:</strong> 21st May 2026</p>
-    <p><strong>Last Updated:</strong> 21st May 2026</p>
+
+    <p><strong>Effective Date:</strong> 21 May 2026</p>
+    <p><strong>Last Updated:</strong> 21 May 2026</p>
 
     <p><strong>Sylens</strong> is a social charades party game for friends, families, and gatherings. Players act out
-        movies while others guess — solo or in multiplayer rooms across phones and Android TV.</p>
+        movies while others guess — solo or in multiplayer rooms across supported mobile devices and TV platforms,
+        including Android, Android TV, iPhone, iPad, and Apple TV.</p>
 
-    <p><strong>Sylens follows a privacy-first approach.</strong> We collect only what is necessary to make the game
-        work and never sell your data.</p>
+    <p><strong>Sylens follows a privacy-first approach.</strong> We collect only the information necessary to operate
+        the game and never sell your personal information.</p>
 
     <h2>1. Information We Collect</h2>
 
     <p>Sylens is designed to minimise data collection.</p>
 
     <h3>Automatically Collected Data</h3>
+
     <ul>
         <li>Device type, operating system, and app version</li>
         <li>Anonymous session identifier (used for multiplayer room management)</li>
-        <li>App usage data (features used, screens visited) — aggregated and non-identifiable</li>
+        <li>Aggregated, non-identifiable app usage information (such as features used and screens visited)</li>
         <li>Crash reports and diagnostics</li>
     </ul>
 
-    <h3>Data You Provide</h3>
+    <h3>Information You Provide</h3>
+
     <ul>
-        <li>Team names and player names entered during gameplay (not stored permanently; exists only for the duration of
-            a game session)</li>
+        <li>Team names and player names entered during gameplay (stored only for the duration of an active game session)
+        </li>
         <li>Room codes used to join multiplayer games</li>
     </ul>
 
-    <p>Sylens does <strong>not</strong> require account registration, email, or any personal identity information.</p>
+    <p>Sylens does <strong>not</strong> require account registration, email addresses, or any personally identifiable
+        information.</p>
 
     <h2>2. Firebase Services</h2>
 
     <p>Sylens uses Firebase services provided by Google to support core functionality.</p>
 
     <h3>2.1 Firebase Authentication</h3>
+
     <ul>
-        <li>Sylens uses <strong>anonymous authentication</strong> only</li>
-        <li>No email, name, or personal credentials are required or collected</li>
-        <li>An anonymous session token is created automatically to identify your device during a multiplayer session</li>
-        <li>This token is not linked to any personal identity</li>
+        <li>Sylens uses anonymous authentication only.</li>
+        <li>No email address, password, or personal profile is required.</li>
+        <li>An anonymous session identifier is created automatically for multiplayer functionality.</li>
+        <li>This identifier is not linked to your identity.</li>
     </ul>
 
     <h3>2.2 Cloud Firestore</h3>
+
     <ul>
-        <li>Used to manage real-time multiplayer game rooms</li>
-        <li>Room data (code, team names, game state) is stored temporarily during an active session</li>
-        <li>Room data is automatically cleaned up after the game ends</li>
-        <li>No personal data is stored in Firestore beyond the anonymous session token</li>
+        <li>Used to manage multiplayer game rooms in real time.</li>
+        <li>Room data (room code, team names and game state) is stored only while the game is active.</li>
+        <li>Room data is automatically deleted after the game ends.</li>
+        <li>No personal information is stored in Firestore beyond anonymous session identifiers.</li>
     </ul>
 
     <h3>2.3 Crash Reporting</h3>
+
     <ul>
-        <li>Used to identify and fix application crashes</li>
-        <li>No sensitive personal data is intentionally collected</li>
+        <li>Used to help identify and fix software issues.</li>
+        <li>No sensitive personal information is intentionally collected.</li>
     </ul>
 
     <h2>3. Advertising (Google AdMob)</h2>
@@ -84,22 +97,32 @@
     <p>Sylens displays advertisements powered by <strong>Google AdMob</strong>.</p>
 
     <ul>
-        <li>Ads help keep Sylens free to play</li>
-        <li>AdMob may collect device identifiers and usage data to serve relevant ads</li>
-        <li>Ad personalisation is subject to Google's advertising policies</li>
-        <li>You can opt out of personalised ads via your device settings</li>
+        <li>Advertisements help keep Sylens free to play.</li>
+        <li>Google AdMob may collect device identifiers and usage information to display advertisements.</li>
+        <li>Where required by law, you will be asked for consent before personalised advertisements are shown.</li>
+        <li>On iOS and iPadOS, personalised advertising is subject to Apple's App Tracking Transparency (ATT) framework
+            and your device settings.</li>
+        <li>You can manage advertising preferences through your device settings.</li>
     </ul>
 
-    <p>Users may purchase the <strong>"Remove Ads"</strong> in-app purchase to disable all advertisements.</p>
+    <p>Users may purchase the optional <strong>"Remove Ads"</strong> in-app purchase to disable advertisements within
+        the app.</p>
 
-    <p>For more information, see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+    <p>For more information, please refer to:</p>
+
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+    </ul>
 
     <h2>4. In-App Purchases</h2>
 
     <ul>
-        <li>Sylens offers an optional one-time "Remove Ads" purchase</li>
-        <li>All payment processing is handled securely by Google Play</li>
-        <li>Sylens does not collect or store any payment or billing information</li>
+        <li>Sylens offers an optional one-time <strong>"Remove Ads"</strong> purchase.</li>
+        <li>All payments are securely processed by the Apple App Store or Google Play.</li>
+        <li>Sylens does not collect, process, or store payment or billing information.</li>
+        <li>Eligible purchases may be restored on supported devices using the same Apple ID or Google account, subject
+            to the applicable app store's policies.</li>
     </ul>
 
     <h2>5. Camera Permission</h2>
@@ -107,92 +130,99 @@
     <p>Sylens requests camera access <strong>only</strong> for scanning QR codes to join multiplayer game rooms.</p>
 
     <ul>
-        <li>The camera is never used for any other purpose</li>
-        <li>No images or video are captured, stored, or transmitted</li>
-        <li>Camera permission is optional — you can also join rooms by typing the room code manually</li>
+        <li>The camera is never used for any other purpose.</li>
+        <li>No images or videos are captured, stored, or transmitted.</li>
+        <li>Camera access is optional. Players can always join a room by entering the room code manually.</li>
     </ul>
 
     <h2>6. Local Data Storage</h2>
 
     <ul>
-        <li>Sylens stores its movie and content database <strong>locally on your device</strong></li>
-        <li>Game preferences (sound, music settings) are stored locally</li>
-        <li>No personal data is stored in the local database</li>
+        <li>The Sylens movie database and game content are stored locally on your device.</li>
+        <li>Game preferences (such as sound and music settings) are stored locally.</li>
+        <li>No personal information is stored in the local database.</li>
     </ul>
 
     <h2>7. Data Sharing</h2>
 
-    <p>Sylens does not sell, trade, or rent your personal data.</p>
+    <p>Sylens does not sell, rent, or trade your personal information.</p>
 
-    <p>Data is only shared:</p>
+    <p>Information is shared only:</p>
 
     <ul>
-        <li>With Firebase (Google) to operate multiplayer features and crash reporting</li>
-        <li>With Google AdMob to display advertisements (unless ads are removed)</li>
-        <li>With Google Play for in-app purchase processing</li>
-        <li>When required by law</li>
+        <li>With Firebase (Google) to provide multiplayer functionality and crash reporting.</li>
+        <li>With Google AdMob to display advertisements (unless advertisements have been removed).</li>
+        <li>With Apple App Store or Google Play solely for processing in-app purchases.</li>
+        <li>When required by applicable law or legal process.</li>
     </ul>
 
     <h2>8. Data Retention</h2>
 
     <ul>
-        <li>Multiplayer room data is deleted automatically when a game session ends</li>
-        <li>Anonymous session tokens expire and are not linked to any persistent identity</li>
-        <li>Local app data remains until you uninstall the app</li>
-        <li>Analytics data is retained according to Firebase policies</li>
+        <li>Multiplayer room data is automatically deleted when a game session ends.</li>
+        <li>Anonymous session identifiers expire and are not linked to any persistent identity.</li>
+        <li>Local application data remains on your device until the app is uninstalled or its data is cleared.</li>
+        <li>Analytics and diagnostic information is retained according to Firebase's retention policies.</li>
     </ul>
 
     <h2>9. Your Rights</h2>
 
-    <p>Depending on your region, you may have rights to access, delete, or restrict processing of your data.</p>
+    <p>Depending on your location, you may have rights to access, correct, delete, or restrict the processing of your
+        information.</p>
 
     <p>You can:</p>
 
     <ul>
-        <li>Delete all local data by uninstalling the app</li>
-        <li>Opt out of personalised ads via your Android device settings</li>
-        <li>Revoke camera permission via your device settings at any time</li>
+        <li>Delete local data by uninstalling the app.</li>
+        <li>Manage advertising preferences through your Android or Apple device settings.</li>
+        <li>Revoke camera permission at any time through your device settings.</li>
     </ul>
 
     <h2>10. Children's Privacy</h2>
 
-    <p>Sylens is a family-friendly party game suitable for all ages. We do not knowingly collect personal data from
-        children. The app does not require any account creation or personal information from any user regardless of
-        age.</p>
+    <p>Sylens is a family-friendly party game suitable for players of all ages.</p>
+
+    <p>We do not knowingly collect personal information from children. The app does not require users to create
+        accounts or provide personal information.</p>
 
     <h2>11. Security</h2>
 
     <ul>
-        <li>Multiplayer data is protected by Firestore security rules — only room participants can access room data</li>
-        <li>Anonymous authentication ensures no personal identity is exposed</li>
-        <li>All communication with Firebase uses encrypted connections (HTTPS/TLS)</li>
+        <li>Multiplayer room data is protected by Firebase Firestore security rules.</li>
+        <li>Anonymous authentication ensures that personal identities are not exposed.</li>
+        <li>All communication with Firebase uses encrypted HTTPS/TLS connections.</li>
     </ul>
 
     <h2>12. International Data Transfers</h2>
 
-    <p>Firebase and Google AdMob may process data outside your country. Google applies appropriate safeguards in
-        accordance with applicable data protection laws.</p>
+    <p>Firebase, Google AdMob, Apple, and other service providers may process information in countries outside your
+        country of residence. These providers apply appropriate safeguards in accordance with applicable privacy and
+        data protection laws.</p>
 
-    <h2>13. Changes to This Policy</h2>
+    <h2>13. Changes to This Privacy Policy</h2>
 
-    <p>We may update this Privacy Policy from time to time. Updates will be reflected with a revised "Last Updated"
-        date at the top of this page.</p>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the
+        <strong>Last Updated</strong> date at the top of this page.
+    </p>
 
-    <h2>14. Contact</h2>
+    <h2>14. Contact Us</h2>
 
-    <p>If you have any questions about this Privacy Policy, please contact:</p>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
 
-    <p>Email: coderdoniv@gmail.com</p>
-    <p>Website: https://vbverse.com</p>
+    <p>
+        Email: coderdoniv@gmail.com<br>
+        Website: https://vbverse.com
+    </p>
 
     <h2>15. Compliance</h2>
 
-    <p>This Privacy Policy is designed to comply with:</p>
+    <p>This Privacy Policy is intended to comply with applicable privacy laws and platform requirements, including:</p>
 
     <ul>
         <li>Google Play User Data Policy</li>
-        <li>Apple App Store Privacy Guidelines</li>
+        <li>Apple App Store Review Guidelines</li>
         <li>General Data Protection Regulation (GDPR)</li>
+        <li>California Consumer Privacy Act (CCPA), where applicable</li>
         <li>Children's Online Privacy Protection Act (COPPA)</li>
     </ul>
 

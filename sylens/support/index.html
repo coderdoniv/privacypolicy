@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sylens Support</title>
+
+    <meta name="description"
+        content="Get help with Sylens, the movie charades party game. Find answers about gameplay, TV Party, game modes, purchases, and more.">
+
+    <style>
+        :root {
+            --text: #17171c;
+            --muted: #62626d;
+            --primary: #635bdb;
+            --primary-dark: #5048c7;
+            --border: rgba(255, 255, 255, 0.75);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, Helvetica, Arial, sans-serif;
+
+            color: var(--text);
+            line-height: 1.6;
+
+            background-color: #090012;
+
+            background-image:
+                linear-gradient(rgba(5, 0, 15, 0.15),
+                    rgba(5, 0, 15, 0.15)),
+                url("images/background.png");
+
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Main container */
+
+        .container {
+            width: 100%;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        /* Header */
+
+        .header {
+            text-align: center;
+            margin-bottom: 42px;
+        }
+
+        .logo {
+            display: block;
+            width: 200px;
+            height: 200px;
+
+            object-fit: contain;
+
+            border-radius: 22px;
+
+            margin: 0 auto 22px;
+
+        }
+
+        h1 {
+            color: #ffffff;
+
+            font-size: 42px;
+            line-height: 1.15;
+
+            margin: 0 0 12px;
+
+            letter-spacing: -1px;
+
+            text-shadow:
+                0 2px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        .tagline {
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+
+            text-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.55),
+                0 0 18px rgba(255, 255, 255, 0.12);
+        }
+
+        .tagline span {
+            color: #ffe500;
+            font-weight: 800;
+
+            text-shadow:
+                0 0 8px rgba(255, 229, 0, 0.35),
+                0 2px 10px rgba(0, 0, 0, 0.55);
+        }
+
+        @media (max-width: 600px) {
+            .tagline {
+                font-size: 13px;
+                letter-spacing: 2px;
+                line-height: 1.6;
+            }
+        }
+
+        /* Introduction */
+
+        .intro {
+            max-width: 680px;
+
+            margin: 0 auto 36px;
+
+            text-align: center;
+
+            color: rgba(255, 255, 255, 0.9);
+
+            font-size: 17px;
+
+            text-shadow:
+                0 2px 10px rgba(0, 0, 0, 0.45);
+        }
+
+        /* Cards */
+
+        .card {
+            background: rgba(255, 255, 255, 0.94);
+
+            border: 1px solid var(--border);
+
+            border-radius: 18px;
+
+            padding: 30px;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.20);
+
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        h2 {
+            font-size: 22px;
+
+            margin: 0 0 20px;
+
+            letter-spacing: -0.2px;
+        }
+
+        /* FAQ */
+
+        .faq {
+            margin-bottom: 26px;
+        }
+
+        .faq:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 650;
+
+            font-size: 16px;
+
+            margin-bottom: 6px;
+        }
+
+        .faq-answer {
+            color: var(--muted);
+
+            margin: 0;
+        }
+
+        /* Contact */
+
+        .contact {
+            background:
+                linear-gradient(135deg,
+                    rgba(240, 239, 255, 0.96),
+                    rgba(247, 246, 255, 0.94));
+
+            border-color: rgba(222, 220, 255, 0.9);
+        }
+
+        .contact a {
+            color: var(--primary-dark);
+
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Legal buttons */
+
+        .links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+
+            padding: 11px 18px;
+
+            border-radius: 10px;
+
+            border: 1px solid #dedee7;
+
+            background: rgba(255, 255, 255, 0.9);
+
+            color: var(--text);
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            font-size: 14px;
+
+            transition:
+                border-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .button:hover {
+            border-color: var(--primary);
+
+            color: var(--primary-dark);
+
+            transform: translateY(-1px);
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+
+            color: rgba(255, 255, 255, 0.68);
+
+            font-size: 14px;
+
+            margin-top: 42px;
+
+            text-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.45);
+        }
+
+        footer p {
+            margin: 6px 0;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.72);
+
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            body {
+                background-attachment: scroll;
+
+                background-position: center top;
+            }
+
+            .container {
+                padding: 40px 18px 60px;
+            }
+
+            .logo {
+                width: 82px;
+                height: 82px;
+
+                border-radius: 19px;
+
+                margin-bottom: 18px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 24px;
+
+                border-radius: 15px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            .faq-question {
+                font-size: 15.5px;
+            }
+
+            .faq-answer {
+                font-size: 15px;
+            }
+
+            .links {
+                flex-direction: column;
+            }
+
+            .button {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <img src="images/logo.png" alt="Sylens logo" class="logo">
+
+            <h1>Sylens Support</h1>
+
+            <p class="tagline">
+                EXCITEMENT STARTS, WHEN THE
+                <span>SYLENS</span>
+                BEGIN!
+            </p>
+
+        </header>
+
+
+        <!-- Introduction -->
+
+        <p class="intro">
+            Need help with Sylens? Find answers to common questions about
+            gameplay, TV Party, game modes, purchases, and more.
+        </p>
+
+
+        <!-- Frequently Asked Questions -->
+
+        <section class="card">
+
+            <h2>Frequently Asked Questions</h2>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    Do I need an internet connection to play?
+                </div>
+
+                <p class="faq-answer">
+                    No. Just Vibing and Squad War can be played without an
+                    internet connection because the movie library is stored
+                    on your device. TV Party requires an internet connection
+                    to synchronize the TV and phones.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    How do I start a TV Party game?
+                </div>
+
+                <p class="faq-answer">
+                    On the TV, choose <strong>Start a TV Game</strong>.
+                    The TV will display a QR code and a room code. Players
+                    can scan the QR code or enter the room code on their
+                    phones to join as controllers.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    What happens in Sudden Death?
+                </div>
+
+                <p class="faq-answer">
+                    If teams are tied at the end of the final round in
+                    Squad War, Sudden Death breaks the tie with one fast
+                    extra round.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    What do the in-round assists do?
+                </div>
+
+                <p class="faq-answer">
+                    <strong>Change Movie</strong> swaps the current movie
+                    for a new one. <strong>Details</strong> reveals the
+                    release year, cast, and a short clue.
+                    <strong>Half Name</strong> reveals the first half of
+                    the movie title. Each assist costs points from that
+                    round's score.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    How many movies are in Sylens?
+                </div>
+
+                <p class="faq-answer">
+                    Sylens includes over 1,000 movies across a wide range
+                    of genres.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    What languages does Sylens support?
+                </div>
+
+                <p class="faq-answer">
+                    Sylens supports English, Malayalam, Hindi, and Tamil.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    Do I need to create an account?
+                </div>
+
+                <p class="faq-answer">
+                    No. Just Vibing and Squad War require no sign-up.
+                    TV Party also requires no account. A temporary game
+                    room is created automatically when you start a TV game.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    Does Sylens show ads?
+                </div>
+
+                <p class="faq-answer">
+                    Yes. Banner and full-screen ads may appear during play.
+                    <strong>Remove Ads</strong> is a one-time purchase that
+                    turns ads off permanently.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    I bought Remove Ads before. How do I restore my purchase?
+                </div>
+
+                <p class="faq-answer">
+                    Open <strong>Remove Ads</strong> from the home screen
+                    and tap <strong>Restore Purchases</strong>. Your purchase
+                    is restored using your App Store or Google Play account,
+                    so you do not need to purchase it again.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    How do I report a bug or suggest a movie or language?
+                </div>
+
+                <p class="faq-answer">
+                    Open <strong>Settings</strong> in Sylens and select
+                    <strong>About</strong>. You can use the feedback form
+                    there to report a bug or suggest a movie or language.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Game Modes -->
+
+        <section class="card">
+
+            <h2>Game Modes</h2>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    Just Vibing
+                </div>
+
+                <p class="faq-answer">
+                    A relaxed movie charades experience for when you just
+                    want to play, act, and have fun.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    Squad War
+                </div>
+
+                <p class="faq-answer">
+                    Team-based competition where players battle for the
+                    highest score, with Sudden Death available to settle
+                    a tie in the final round.
+                </p>
+
+            </div>
+
+
+            <div class="faq">
+
+                <div class="faq-question">
+                    TV Party
+                </div>
+
+                <p class="faq-answer">
+                    Turn your TV into the stage and use your phones as
+                    wireless controllers. Players join the temporary game
+                    room using a QR code or room code.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section class="card contact">
+
+            <h2>Contact Support</h2>
+
+            <p>
+                Still need help? We'd love to hear from you.
+                Please include as much information as possible about
+                the issue you're experiencing.
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:coderdoniv@gmail.com">
+                    coderdoniv@gmail.com
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- Legal -->
+
+        <section class="card">
+
+            <h2>Legal</h2>
+
+            <p>
+                For information about the terms governing your use of
+                Sylens and how your information is handled, please see
+                our Terms of Use and Privacy Policy.
+            </p>
+
+            <div class="links">
+
+                <a class="button" href="https://vbverse.com/privacypolicy/sylens/terms/">
+                    Terms of Use
+                </a>
+
+                <a class="button" href="https://vbverse.com/privacypolicy/sylens/">
+                    Privacy Policy
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+                © 2026 coderdoniv
+            </p>
+
+            <p>
+                <a href="https://vbverse.com">
+                    vbverse.com
+                </a>
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
